@@ -23,7 +23,7 @@ RUN apt-get update \
 	&& rm -fr /var/lib/apt/lists/* \
 	&& groupmod -g 1500 plex \
 	&& usermod -u 1500 -g plex plex \
-	&& chown plex:plex /var/lib/plexmediaserver
+	&& chown -R plex:plex /var/lib/plexmediaserver
 
 # Setup the home volume to hold the server settings
 VOLUME /var/lib/plexmediaserver
