@@ -1,7 +1,7 @@
 FROM arm32v7/debian:jessie
 
 # Install QEmu to be able to build this image in Travis CI
-COPY qemu-arm-static /usr/bin/qemu-arm-static
+#COPY qemu-arm-static /usr/bin/qemu-arm-static
 
 # Add Tini to run as PID 1
 ENV TINI_VERSION v0.13.2
